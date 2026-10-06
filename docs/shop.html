@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>상점 — 칩 게임</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="shell">
+  <div class="topbar">
+    <div class="brand">칩 게임</div>
+    <div class="who"><span id="who-name" class="mono"></span></div>
+  </div>
+
+  <nav class="tabs">
+    <a href="dashboard.html">내 페이지</a>
+    <a href="games.html">게임</a>
+    <a href="shop.html" class="active">상점</a>
+  </nav>
+
+  <p class="muted">필요한 칩 색상과 수량은 그 순간의 칩 가치 순위에 따라 자동으로 정해지며, 아이템이 하나라도 사용될 때마다 5개 항목의 필요 수량이 모두 함께 1개씩 늘어납니다.</p>
+
+  <div id="items"></div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/shop.js"></script>
+</body>
+</html>

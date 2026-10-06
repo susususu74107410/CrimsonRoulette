@@ -1,0 +1,22 @@
+# Supabase CLI 설정 파일.
+# project_id는 로컬 식별용 이름일 뿐이라 아무 값이어도 됩니다 (실제 프로젝트 연결은 --project-ref 로 지정).
+project_id = "chip-game"
+
+# 이 앱은 Supabase Auth를 쓰지 않고 자체 로그인 토큰(세션 테이블)을 사용하므로,
+# 게이트웨이 단의 JWT 검증을 꺼야 우리가 만든 토큰을 Authorization 헤더로
+# 보낼 수 있습니다. (각 함수 코드 안에서 sessions/admin_sessions 테이블로
+# 직접 인증을 검증합니다.)
+[functions.auth]
+verify_jwt = false
+
+[functions.data]
+verify_jwt = false
+
+[functions.game]
+verify_jwt = false
+
+[functions.economy]
+verify_jwt = false
+
+[functions.admin]
+verify_jwt = false

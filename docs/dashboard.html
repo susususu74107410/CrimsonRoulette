@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>내 페이지 — 칩 게임</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="shell">
+  <div class="topbar">
+    <div class="brand">칩 게임</div>
+    <div class="who">
+      <span id="who-name" class="mono"></span><br />
+      <a href="#" id="logout-link">로그아웃</a>
+    </div>
+  </div>
+
+  <nav class="tabs">
+    <a href="dashboard.html" class="active">내 페이지</a>
+    <a href="games.html">게임</a>
+    <a href="shop.html">상점</a>
+  </nav>
+
+  <div class="panel center">
+    <div class="panel-title">보유 칩 총합</div>
+    <div class="total-value" id="total-value">—</div>
+    <p class="muted" id="team-name"></p>
+  </div>
+
+  <div class="panel">
+    <div class="panel-title">색상별 보유 수량</div>
+    <div id="chip-list"></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-title">오늘 남은 시스템(NVP) 게임 횟수</div>
+    <div id="nvp-remaining"></div>
+  </div>
+
+  <div class="panel" id="pending-pvp-panel" style="display:none;">
+    <div class="panel-title">내가 만든 대기 중인 PVP 코드</div>
+    <div id="pending-pvp-list"></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-title">개인 기록</div>
+    <div id="personal-log"><p class="muted">불러오는 중...</p></div>
+  </div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

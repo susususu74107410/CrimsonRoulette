@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>로그인 — 칩 게임</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="shell" style="max-width: 400px; padding-top: 60px;">
+  <h1 class="center">칩 게임</h1>
+  <p class="muted center">발급받은 아이디로 로그인하세요.</p>
+
+  <div id="msg" class="msg" style="display:none;"></div>
+
+  <form id="login-form">
+    <div class="field-group">
+      <label for="id">아이디</label>
+      <input id="id" name="id" autocomplete="username" required />
+    </div>
+    <div class="field-group">
+      <label for="password">비밀번호</label>
+      <input id="password" name="password" type="password" autocomplete="current-password" required />
+    </div>
+    <button type="submit" style="width:100%; margin-top:16px;">로그인</button>
+  </form>
+
+  <p class="muted center" style="margin-top:24px;"><a href="index.html">← 공개 기록 보기</a></p>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>
